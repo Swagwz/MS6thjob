@@ -1,1 +1,0 @@
-{"mappings":"AACA;EACE","sources":["query .css"],"sourcesContent":["/* width : 512px */\r\n@media (max-width: 32em) {\r\n  main .grid-2-cols {\r\n    grid-template-columns: 1fr;\r\n  }\r\n}\r\n"],"names":[],"version":3,"file":"index.519ad2f4.css.map","sourceRoot":"/__parcel_source_root/"}
