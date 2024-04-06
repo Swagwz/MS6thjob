@@ -1,0 +1,6 @@
+@media (width <= 32em) {
+  main .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=index.519ad2f4.css.map */
