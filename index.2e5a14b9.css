@@ -1,0 +1,6 @@
+@media (width <= 32em) {
+  .section-form {
+    grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=index.2e5a14b9.css.map */

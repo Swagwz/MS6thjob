@@ -517,29 +517,31 @@ const calcErdaFragNum = function(coreArr) {
     const numSkillEdra = erdaFragNum.reduce((acc, cur)=>acc + cur, 0);
     return numSkillEdra;
 };
+// 每個核心滿等所需數量
 const maxSkill = calcErdaFragNum(skillCore);
 const maxMastery = calcErdaFragNum(masteryCore);
 const maxEnhancement = calcErdaFragNum(enhancementCore);
 const total = maxSkill + maxMastery + 4 * maxEnhancement;
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
+btn.addEventListener("click", function() {
+    //獲得按下按鈕當下的input value
     const skill = document.getElementById("skill").value;
     const mastery = document.getElementById("mastery").value;
     const enhancement1 = document.getElementById("enhancement-1").value;
     const enhancement2 = document.getElementById("enhancement-2").value;
     const enhancement3 = document.getElementById("enhancement-3").value;
     const enhancement4 = document.getElementById("enhancement-4").value;
-    // skill
+    // 技能核心進度
     const skillProgress = calcErdaFragNum(skillCore.slice(0, skill)) / maxSkill;
-    // mastery
+    // 精通核心進度
     const masteryProgress = calcErdaFragNum(masteryCore.slice(0, mastery)) / maxMastery;
-    // enhancement
+    // 強化核心進度
     const enhancement1Progress = calcErdaFragNum(enhancementCore.slice(0, enhancement1)) / maxEnhancement;
     const enhancement2Progress = calcErdaFragNum(enhancementCore.slice(0, enhancement2)) / maxEnhancement;
     const enhancement3Progress = calcErdaFragNum(enhancementCore.slice(0, enhancement3)) / maxEnhancement;
     const enhancement4Progress = calcErdaFragNum(enhancementCore.slice(0, enhancement4)) / maxEnhancement;
-    // total
+    // 六轉總進度
     const totalProgress = (skillProgress * maxSkill + masteryProgress * maxMastery + enhancement1Progress * maxEnhancement + enhancement2Progress * maxEnhancement + enhancement3Progress * maxEnhancement + enhancement4Progress * maxEnhancement) / total;
+    // 改變html上顯示的數值
     skillNum.textContent = (skillProgress * 100).toFixed(2);
     masteryNum.textContent = (masteryProgress * 100).toFixed(2);
     enhancement1Num.textContent = (enhancement1Progress * 100).toFixed(2);
