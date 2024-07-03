@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #eeeeee;
+  background-color: #222831;
+}
+
+/* resuable */
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+/* ////////////////// */
+.section-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.title {
+  grid-column: 1/-1;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+input {
+  padding: 0.8rem;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  width: 50%;
+  background-color: #eeeeee;
+  color: #00686d;
+}
+
+.btn-submit {
+  padding: 0.4rem 2.4rem;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #eeeeee;
+  color: #00686d;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.total-progress {
+  font-size: 2rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #eee;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  color: #999;
+}
+
+footer p {
+  text-align: center;
+}
+
+.section-calc {
+  grid-column: 1/-1;
+}

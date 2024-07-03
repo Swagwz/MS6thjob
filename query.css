@@ -1,0 +1,10 @@
+/* width : 512px */
+@media (max-width: 32em) {
+  /* .grid-2-cols {
+    grid-template-columns: 1fr !important;
+  } */
+
+  .section-form {
+    grid-template-columns: 1fr;
+  }
+}
