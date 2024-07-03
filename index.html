@@ -17,36 +17,57 @@
         <div class="flex">
           <input
             type="number"
-            name="skill"
             id="skill"
+            min="0"
+            max="30"
+            inputmode="decimal"
+            placeholder="請輸入等級"
+          />
+          <div class="skill-progress">進度 : 0 %</div>
+        </div>
+      </div>
+
+      <div class="common">
+        <label>共通核心</label>
+        <div class="flex">
+          <input
+            type="number"
+            id="common"
             min="0"
             max="30"
             placeholder="請輸入等級"
           />
-          <div class="skill-progress flex">
-            進度 :
-            <div class="skill-num">0</div>
-            %
-          </div>
+          <div class="common-progress">進度 : 0 %</div>
         </div>
       </div>
 
       <div class="mastery">
-        <label for="mastery">精通核心</label>
+        <label for="mastery-1">精通核心 1</label>
         <div class="flex">
           <input
             type="number"
-            name="mastery"
-            id="mastery"
+            id="mastery-1"
             min="0"
             max="30"
+            inputmode="decimal"
             placeholder="請輸入等級"
           />
-          <div class="mastery-progress flex">
-            進度 :
-            <div class="mastery-num">0</div>
-            %
-          </div>
+          <div class="mastery-1-progress">進度 : 0 %</div>
+        </div>
+      </div>
+
+      <div class="mastery">
+        <label for="mastery-2">精通核心 2</label>
+        <div class="flex">
+          <input
+            type="number"
+            id="mastery-2"
+            min="0"
+            max="30"
+            inputmode="decimal"
+            placeholder="請輸入等級"
+          />
+          <div class="mastery-2-progress">進度 : 0 %</div>
         </div>
       </div>
 
@@ -55,17 +76,13 @@
         <div class="flex">
           <input
             type="number"
-            name="enhancement-1"
             id="enhancement-1"
             min="0"
             max="30"
+            inputmode="decimal"
             placeholder="請輸入等級"
           />
-          <div class="enhancement-1-progress flex">
-            進度 :
-            <div class="enhancement-1-num">0</div>
-            %
-          </div>
+          <div class="enhancement-1-progress">進度 : 0 %</div>
         </div>
       </div>
 
@@ -74,17 +91,13 @@
         <div class="flex">
           <input
             type="number"
-            name="enhancement-2"
             id="enhancement-2"
             min="0"
             max="30"
+            inputmode="decimal"
             placeholder="請輸入等級"
           />
-          <div class="enhancement-2-progress flex">
-            進度 :
-            <div class="enhancement-2-num">0</div>
-            %
-          </div>
+          <div class="enhancement-2-progress">進度 : 0 %</div>
         </div>
       </div>
 
@@ -93,17 +106,13 @@
         <div class="flex">
           <input
             type="number"
-            name="enhancement-3"
             id="enhancement-3"
             min="0"
             max="30"
+            inputmode="decimal"
             placeholder="請輸入等級"
           />
-          <div class="enhancement-3-progress flex">
-            進度 :
-            <div class="enhancement-3-num">0</div>
-            %
-          </div>
+          <div class="enhancement-3-progress">進度 : 0 %</div>
         </div>
       </div>
 
@@ -112,41 +121,23 @@
         <div class="flex">
           <input
             type="number"
-            name="enhancement-4"
             id="enhancement-4"
             min="0"
             max="30"
+            inputmode="decimal"
             placeholder="請輸入等級"
           />
-          <div class="enhancement-4-progress flex">
-            進度 :
-            <div class="enhancement-4-num">0</div>
-            %
-          </div>
+          <div class="enhancement-4-progress">進度 : 0 %</div>
         </div>
       </div>
 
-      <!-- 共通尚未開放 -->
-      <!-- <div class="common">
-          <h2>共通核心</h2>
-          <div class="flex">
-          <input type="number" name="common" id="common" min="0" max="30" placeholder="請輸入等級" />
-          <div class="common-progress flex">
-            進度 :
-            <div class="common-num">0</div>
-            %
-          </div>
-        </div>
-        </div> -->
-      <div class="section-calc flex">
+      <div class="section-calc">
         <button type="button" class="btn-submit">計算</button>
-        <div class="total-progress flex">
-          目前6轉進度為:
-          <div class="progress-num">0</div>
-          %
-        </div>
+        <p class="total-progress">目前6轉進度為: 0%</p>
+        <p class="total-fragment">累計碎片量為: 0個</p>
       </div>
     </main>
+
     <footer>
       <p>
         資料來源:
