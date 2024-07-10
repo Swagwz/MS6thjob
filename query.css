@@ -1,5 +1,9 @@
 /* width : 512px */
 @media (max-width: 32em) {
+  html {
+    touch-action: manipulation;
+  }
+
   .section-form {
     grid-template-columns: 1fr;
   }
